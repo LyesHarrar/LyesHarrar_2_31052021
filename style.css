@@ -1,0 +1,195 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    /* font-size: 0.97em; */
+  }
+
+  /* style du header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+   margin-top: 16px;
+   position: relative;
+}
+header nav a {
+    text-decoration: none;
+    color: black;
+    padding: 2em;
+    font-weight: 500;
+}
+nav a:hover{
+    border-top: 2px solid #0065FC;
+    padding-top: 34px;
+    color: #0065FC;
+}
+nav a:visited{
+    color: none;
+}
+/* nav a:active{
+    border-top: none;
+} */
+.lien_inscrire{
+    color: #0065FC;
+    font-weight: bold;
+}
+.lien_inscrire:hover{
+    border-top: none;
+
+}
+@media screen and (orientation:portrait){
+    .lien_inscrire{
+        position: absolute;
+
+    }
+}
+main section h1{
+    font-weight:800;
+    margin-bottom: 0;
+    font-size: 1.35em;
+}
+.paragraphe1{
+    margin-top: 7px;
+    font-size: 1em;
+    font-weight: 500;
+}
+form {
+    margin: 2em 0 2em 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.map{
+    font-size: 1em;
+    width: 47px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-bottom: 4px; */
+    border: 1px solid #F2F2F2;
+    border-radius: 16px 0 0 16px;
+    background-color: #F2F2F2;
+}
+.map:hover{
+    font-size: 1.3em;
+}
+input{
+    height: 43.5px;
+    padding: 0 0 0 1em;
+    margin: 0;
+    width: 17%;
+    border: 1px solid rgb(242,242,242);
+    /* border-right: none; */
+    font-size: 1.1em;
+    font-family: inherit;
+    font-weight: 500;
+}
+input::placeholder{
+    color: black;
+    /* font-size: 1.2em; */
+    font-weight: 600;
+    /* padding-left: 10px; */
+}
+.boutonRechercher{
+    color: white;
+    background-color: #0065FC;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.1em;
+    font-weight: 600;
+    height: 45px;
+    width: 125px;
+    padding: 10px;
+    margin: 0em;
+    border-radius: 0 16px 16px 0;
+    border: none;
+}
+.boutonRechercher:hover{
+    font-size: 1em;
+}
+.filtres{
+    margin-bottom: 2em;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.filtres span{
+    /* display: block; */
+    font-weight: 800;
+    font-size: 1.15em;
+    white-space: nowrap;
+}
+.filtres div{
+    border: 1px solid #F2F2F2;
+    border-radius: 25px;
+    /* padding: 10px; */
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.icon{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50px;
+    height: 47px;
+    width: 45px;
+    margin: 0;
+}
+ .filtres div span{
+    font-weight: 800;
+    font-size: 1.1em;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.filtres div:hover{
+    border: 1px solid #0065fc;
+    background-color: #DEEBFF;
+}
+.filtres div:hover .descriptionfiltre{
+    color: #0065FC;
+}
+.filtres div:hover .icon{
+    background-color: #0065FC;
+    color: white;
+}
+
+.phraseInfo{
+    font-weight: 600;
+    font-size: 0.90em;
+}
+.cercle{
+    color: #0065FC;
+    font-size: 0.70em;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 100%;
+    height: 1.3em;
+    width: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    padding: 1px;
+}
+.info{
+    display: flex;
+    align-items: center;
+}
+
+
+/* style du header */
