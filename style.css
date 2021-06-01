@@ -1,21 +1,25 @@
 body {
     font-family: 'Raleway', sans-serif;
     color: black;
-    max-width: 1400px;
-    width: 100%;
-    margin: auto;
-    padding: 20px;
-    /* font-size: 0.97em; */
+    max-width: 1440px;
+    /* width: 100%; */
+    margin: 0 auto;
+    font-size: 0.95em;
   }
 
   /* style du header */
 
 header {
+    position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    /* width: 1440px; */
+    margin: 0 50px 2em 50px;
 }
 nav{
-   margin-top: 16px;
+   margin-top: 14px;
    position: relative;
 }
 header nav a {
@@ -25,8 +29,8 @@ header nav a {
     font-weight: 500;
 }
 nav a:hover{
-    border-top: 2px solid #0065FC;
-    padding-top: 34px;
+    border-top: 3px solid #0065FC;
+    padding-top: 70px;
     color: #0065FC;
 }
 nav a:visited{
@@ -43,11 +47,16 @@ nav a:visited{
     border-top: none;
 
 }
-@media screen and (orientation:portrait){
+/* @media screen and (orientation:portrait){
     .lien_inscrire{
         position: absolute;
 
     }
+} */
+.parametres{
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: column;
 }
 main section h1{
     font-weight:800;
@@ -160,13 +169,16 @@ input::placeholder{
 .filtres div:hover{
     border: 1px solid #0065fc;
     background-color: #DEEBFF;
+    transition: 0.2s;
 }
 .filtres div:hover .descriptionfiltre{
     color: #0065FC;
+    transition: 0.2s;
 }
 .filtres div:hover .icon{
     background-color: #0065FC;
     color: white;
+    transition: 0.2s;
 }
 
 .phraseInfo{
@@ -193,3 +205,4 @@ input::placeholder{
 
 
 /* style du header */
+
