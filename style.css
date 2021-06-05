@@ -2,7 +2,8 @@ body {
     font-family: 'Raleway', sans-serif;
     color: black;
     max-width: 1440px;
-    /* width: 100%; */
+    width: auto;
+    /* width: 1024px; */
     margin: 0 auto;
     font-size: 0.95em;
   }
@@ -14,9 +15,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 2%;
     /* width: 1440px; */
-    margin: 0 50px 2em 50px;
+    /* margin: 0 50px 2em 50px; */
+    margin: 0 3.8% 0 3.8%;
 }
 nav{
    margin-top: 14px;
@@ -54,22 +56,25 @@ nav a:visited{
     }
 } */
 .parametres{
-    margin: 0px 50px;
+    /* margin: 0px 50px; */
+    position: relative;
+    /* margin: 0 auto; */
+    margin: 0 3.8% 0 3.8%;
     display: flex;
     flex-direction: column;
 }
-main section h1{
+.parametres h1{
     font-weight:800;
     margin-bottom: 0;
     font-size: 1.35em;
 }
-.paragraphe1{
+.parametres p{
     margin-top: 7px;
-    font-size: 1em;
-    font-weight: 500;
+    font-size: 0.9em;
+    font-weight: 600;
 }
 form {
-    margin: 2em 0 2em 0;
+    margin: 0.8em 0 2em 0;
     display: flex;
     justify-content: flex-start;
 }
@@ -137,7 +142,7 @@ input::placeholder{
     white-space: nowrap;
 }
 .filtres div{
-    border: 1px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 25px;
     /* padding: 10px; */
     height: 47px;
@@ -167,7 +172,7 @@ input::placeholder{
     margin-right: 25px;
 }
 .filtres div:hover{
-    border: 1px solid #0065fc;
+    border: 2px solid #0065fc;
     background-color: #DEEBFF;
     transition: 0.2s;
 }
@@ -204,5 +209,144 @@ input::placeholder{
 }
 
 
-/* style du header */
+/* style du header ----------------------------------------------------------------*/
+/*début style hébérgement----------------------------------------------------------*/
 
+.hebergement{
+    /* margin: 35px 50px; */
+    /* margin-top: 35px; */
+    /* margin-bottom: 0; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    display: flex;
+    /* flex-direction: column-reverse; */
+    /* height: 600px; */
+    justify-content: space-between;
+    margin: 30px 3.8% 0 3.8%;
+    border: 1px solid black;
+}
+.hebergement h2{
+    font-size: 1.3em;
+    width: fit-content;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.hebergement h3{
+    /* display: inline-block; */
+    /* font-weight: 800; */
+    /* font-size: 1.2em; */
+    letter-spacing: 0.1px;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 40px;
+}
+
+.hebergement h3:hover{
+    border-bottom: 2px solid black;
+}
+
+.hebergement section{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 61%;
+    padding: 40px;
+    height: 600px;
+    border: 1px solid black;
+
+    /* justify-content: space-between; */
+}
+
+.hebergement section .blocartes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 415px;
+}
+
+.hebergement section .blocartes div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergement section .blocartes div article{
+    border: 1px solid white;
+    border-radius: 15px;
+    height: 190px;
+    width: 30%;
+    background-color: white;
+    /* box-shadow: 0.1px 0.1px 2.5px black; */
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform .2s;
+    /* margin-top: 20px */
+}
+
+.hebergement section .blocartes div article:hover {
+    -ms-transform: scale(1.019); /* IE 9 */
+    -webkit-transform: scale(1.019); /* Safari 3-8 */
+    transform: scale(1.019); 
+  }
+
+.blocartes article img{
+    height: 115px;
+    width: 98%;
+    margin-left: 2px;
+    margin-top: 2px;
+    /*margin-right: 2.5px; */
+    border-radius: 10px 10px 0 0;
+}
+.blocartes article h4{
+    font-size: 1em;
+    margin: 8px 0 5px 15px;
+}
+
+.description{
+    margin: 0 0 0 15px;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.etoiles{
+    display: flex;
+    justify-content: flex-start;
+    margin: 7px 0 0 15px;
+}
+
+.etoiles i{
+    font-size: 0.8em;
+}
+
+.bleu{
+    color: #0065FC;
+}
+
+.grise{
+    color: #F2F2F2;
+}
+
+aside{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 29.7%;
+    border: 1px solid black;
+
+}
+aside span{
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.fa-chart-line{
+    margin-right: 20px;
+    font-size: 1.6em;
+}
