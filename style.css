@@ -32,7 +32,7 @@ header nav a {
 }
 nav a:hover{
     border-top: 3px solid #0065FC;
-    padding-top: 70px;
+    padding-top: 48px;
     color: #0065FC;
 }
 nav a:visited{
@@ -223,7 +223,7 @@ input::placeholder{
     /* height: 600px; */
     justify-content: space-between;
     margin: 30px 3.8% 0 3.8%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .hebergement h2{
     font-size: 1.3em;
@@ -239,7 +239,7 @@ input::placeholder{
     letter-spacing: 0.1px;
     cursor: pointer;
     width: fit-content;
-    margin-top: 40px;
+    margin-top: 55px;
 }
 
 .hebergement h3:hover{
@@ -253,8 +253,8 @@ input::placeholder{
     flex-direction: column;
     width: 61%;
     padding: 40px;
-    height: 600px;
-    border: 1px solid black;
+    /* height: 500px; */
+    /* border: 1px solid black; */
 
     /* justify-content: space-between; */
 }
@@ -304,7 +304,7 @@ input::placeholder{
 }
 .blocartes article h4{
     font-size: 1em;
-    margin: 8px 0 5px 15px;
+    margin: 8px 0 4px 15px;
 }
 
 .description{
@@ -317,9 +317,6 @@ input::placeholder{
     display: flex;
     justify-content: flex-start;
     margin: 7px 0 0 15px;
-}
-
-.etoiles i{
     font-size: 0.8em;
 }
 
@@ -334,19 +331,84 @@ input::placeholder{
 aside{
     background-color: #F2F2F2;
     border-radius: 15px;
-    /* display: flex; */
-    /* flex-direction: column; */
-    width: 29.7%;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 30.1%;
+    /* border: 1px solid black; */
 
 }
+
 aside span{
     display: inline-block;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    margin: 40px 30px 0px 30px;
 }
+
+aside div{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4px 30px 5px 30px;
+}
+
+aside div article{
+    border: 1px solid white;
+    background-color: white;
+    height: 140px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    transition: transform .2s;
+}
+
+aside div article:hover {
+    -ms-transform: scale(1.019); /* IE 9 */
+    -webkit-transform: scale(1.019); /* Safari 3-8 */
+    transform: scale(1.019); 
+}
+
+aside div article img{
+    width: 38%;
+    height: 140px;
+    border-radius: 10px 0 0 10px;
+}
+
+aside div article div{
+    /* display: flex;
+    flex-direction: column; */
+    padding-left: 19px;
+    height: 130px;
+}
+
+aside div article div h4{
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 0;
+} 
+
+aside div article div span{
+    all: initial;
+    font: inherit;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin: 0px 0px 10px 0px;
+
+}
+
 .fa-chart-line{
-    margin-right: 20px;
     font-size: 1.6em;
+}
+
+.etoiles_populaire{
+    all: initial;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.8em;
+    padding: 24px 0 2px 0;
 }
