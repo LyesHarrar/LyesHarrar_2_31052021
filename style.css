@@ -3,21 +3,16 @@ body {
     color: black;
     max-width: 1440px;
     width: auto;
-    /* width: 1024px; */
     margin: 0 auto;
     font-size: 0.95em;
   }
-
   /* style du header */
-
 header {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 2%;
-    /* width: 1440px; */
-    /* margin: 0 50px 2em 50px; */
     margin: 0 3.8% 0 3.8%;
 }
 nav{
@@ -38,27 +33,15 @@ nav a:hover{
 nav a:visited{
     color: none;
 }
-/* nav a:active{
-    border-top: none;
-} */
 .lien_inscrire{
     color: #0065FC;
     font-weight: bold;
 }
 .lien_inscrire:hover{
     border-top: none;
-
 }
-/* @media screen and (orientation:portrait){
-    .lien_inscrire{
-        position: absolute;
-
-    }
-} */
 .parametres{
-    /* margin: 0px 50px; */
     position: relative;
-    /* margin: 0 auto; */
     margin: 0 3.8% 0 3.8%;
     display: flex;
     flex-direction: column;
@@ -85,7 +68,6 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-bottom: 4px; */
     border: 1px solid #F2F2F2;
     border-radius: 16px 0 0 16px;
     background-color: #F2F2F2;
@@ -99,16 +81,13 @@ input{
     margin: 0;
     width: 17%;
     border: 1px solid rgb(242,242,242);
-    /* border-right: none; */
     font-size: 1.1em;
     font-family: inherit;
     font-weight: 500;
 }
 input::placeholder{
     color: black;
-    /* font-size: 1.2em; */
     font-weight: 600;
-    /* padding-left: 10px; */
 }
 .boutonRechercher{
     color: white;
@@ -136,7 +115,6 @@ input::placeholder{
 
 }
 .filtres span{
-    /* display: block; */
     font-weight: 800;
     font-size: 1.15em;
     white-space: nowrap;
@@ -144,7 +122,6 @@ input::placeholder{
 .filtres div{
     border: 2px solid #F2F2F2;
     border-radius: 25px;
-    /* padding: 10px; */
     height: 47px;
     display: flex;
     align-items: center;
@@ -207,45 +184,26 @@ input::placeholder{
     display: flex;
     align-items: center;
 }
-
-
-/* style du header ----------------------------------------------------------------*/
-/*début style hébérgement----------------------------------------------------------*/
-
+/*------------------------------------style hébérgement--------------------------------------------*/
 .hebergement{
-    /* margin: 35px 50px; */
-    /* margin-top: 35px; */
-    /* margin-bottom: 0; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
     display: flex;
-    /* flex-direction: column-reverse; */
-    /* height: 600px; */
     justify-content: space-between;
     margin: 30px 3.8% 0 3.8%;
-    /* border: 1px solid black; */
 }
 .hebergement h2{
     font-size: 1.3em;
     width: fit-content;
-    margin-top: 0;
-    margin-bottom: 25px;
+    margin: 0 0 25px 0;
 }
-
 .hebergement h3{
-    /* display: inline-block; */
-    /* font-weight: 800; */
-    /* font-size: 1.2em; */
     letter-spacing: 0.1px;
     cursor: pointer;
     width: fit-content;
     margin-top: 55px;
 }
-
 .hebergement h3:hover{
     border-bottom: 2px solid black;
 }
-
 .hebergement section{
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -253,31 +211,23 @@ input::placeholder{
     flex-direction: column;
     width: 61%;
     padding: 40px;
-    /* height: 500px; */
-    /* border: 1px solid black; */
-
-    /* justify-content: space-between; */
 }
-
 .hebergement section .blocartes{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 415px;
 }
-
 .hebergement section .blocartes div{
     display: flex;
     justify-content: space-between;
 }
-
 .hebergement section .blocartes div article{
     border: 1px solid white;
     border-radius: 15px;
     height: 190px;
     width: 30%;
     background-color: white;
-    /* box-shadow: 0.1px 0.1px 2.5px black; */
     cursor: pointer;
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
     padding: 2px;
@@ -285,67 +235,56 @@ input::placeholder{
     flex-direction: column;
     justify-content: flex-start;
     transition: transform .2s;
-    /* margin-top: 20px */
 }
-
 .hebergement section .blocartes div article:hover {
     -ms-transform: scale(1.019); /* IE 9 */
     -webkit-transform: scale(1.019); /* Safari 3-8 */
     transform: scale(1.019); 
   }
-
+.hebergement section .blocartes div article:active{
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
 .blocartes article img{
     height: 115px;
     width: 98%;
     margin-left: 2px;
     margin-top: 2px;
-    /*margin-right: 2.5px; */
     border-radius: 10px 10px 0 0;
 }
 .blocartes article h4{
     font-size: 1em;
     margin: 8px 0 4px 15px;
 }
-
 .description{
     margin: 0 0 0 15px;
     font-size: 0.9em;
     font-weight: 400;
 }
-
 .etoiles{
     display: flex;
     justify-content: flex-start;
     margin: 7px 0 0 15px;
     font-size: 0.8em;
 }
-
 .bleu{
     color: #0065FC;
 }
-
 .grise{
     color: #F2F2F2;
 }
-
 aside{
     background-color: #F2F2F2;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     width: 30.1%;
-    /* border: 1px solid black; */
-
 }
-
 aside span{
     display: inline-block;
     display: flex;
     justify-content: space-between;
-    /* margin-top: 40px; */
     margin: 40px 30px 0px 30px;
 }
-
 aside div{
     height: 500px;
     display: flex;
@@ -353,7 +292,6 @@ aside div{
     justify-content: space-between;
     padding: 4px 30px 5px 30px;
 }
-
 aside div article{
     border: 1px solid white;
     background-color: white;
@@ -361,54 +299,128 @@ aside div article{
     border-radius: 15px;
     cursor: pointer;
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); */
     padding: 4px;
     display: flex;
     justify-content: space-between;
     transition: transform .2s;
 }
-
 aside div article:hover {
     -ms-transform: scale(1.019); /* IE 9 */
     -webkit-transform: scale(1.019); /* Safari 3-8 */
     transform: scale(1.019); 
 }
-
+aside div article:active{
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
 aside div article img{
     width: 38%;
     height: 140px;
     border-radius: 10px 0 0 10px;
 }
-
 aside div article div{
-    /* display: flex;
-    flex-direction: column; */
     padding-left: 19px;
     height: 130px;
 }
-
 aside div article div h4{
     font-size: 1em;
     margin-top: 10px;
     margin-bottom: 0;
 } 
-
 aside div article div span{
     all: initial;
     font: inherit;
     font-size: 0.9em;
     font-weight: 400;
     margin: 0px 0px 10px 0px;
-
 }
-
 .fa-chart-line{
     font-size: 1.6em;
 }
-
 .etoiles_populaire{
     all: initial;
     display: flex;
     justify-content: flex-start;
     font-size: 0.8em;
     padding: 24px 0 2px 0;
+}
+/*----------------------------------------Style Activités----------------------------------*/
+.activites{
+    /* border: 1px solid black; */
+    height: 700px;
+    width: auto;
+    margin: 45px 3.8% 0 3.8%;
+    padding: 0;
+}
+.activites h2{
+    font-size: 1.3em;
+    margin: 70px 0 30px 0;
+}
+.activites section{
+    display: flex;
+    justify-content: space-between;
+}
+.grandecarte{
+    height: 442px;
+    width: 22.5%;
+}
+.doublecarte{
+    height: 444px;
+    width: 22.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.doublecartepartie1{
+    height: 237px;
+}
+.doublecartepartie2{
+    height: 165px;
+}
+.grandecarte, .doublecartepartie1, .doublecartepartie2, .doublecarte2partie1, .doublecarte2partie2{
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 25%);
+    transition: transform .2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+.grandecarte:hover, .doublecartepartie1:hover, .doublecartepartie2:hover, .doublecarte2partie1:hover, .doublecarte2partie2:hover{
+    -ms-transform: scale(1.019); /* IE 9 */
+    -webkit-transform: scale(1.019); /* Safari 3-8 */
+    transform: scale(1.019); 
+    cursor: pointer;
+}
+.grandecarte:active, .doublecartepartie1:active, .doublecartepartie2:active, .doublecarte2partie1:active, .doublecarte2partie2:active{
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+.activites article img{
+    border-radius: 10px 10px 0 0;
+}
+.doublecartepartie1 img{
+    height: 183px;    
+}
+.doublecartepartie2 img{
+    height: 104px;
+}
+.activites article h4{
+    font-size: 1em;
+    margin-left: 17px;
+}
+.doublecarte2partie1{
+    height: 194px;
+}
+.doublecarte2partie2{
+    height: 206px;
+}
+.doublecarte2partie1 img{
+    height: 140px;
+    width: 100%;
+}
+.doublecarte2partie2 img{
+    height: 145px;
+    width: 100%;
+}
+.doublecarte2partie1 h4, .doublecarte2partie2 h4{
+    margin-top: 14px;
 }
