@@ -196,13 +196,17 @@ input::placeholder{
     width: fit-content;
     margin: 0 0 25px 0;
 }
-.hebergement h3{
+.hebergement p{
     letter-spacing: 0.1px;
+    font-size: 1.2em;
+    font-weight: 800;
     cursor: pointer;
     width: fit-content;
-    margin-top: 55px;
+    width: -moz-fit-content;    /*pour firefox*/
+    margin-top: 50px;
 }
-.hebergement h3:hover{
+.hebergement p:hover{
+    width: fit-content;
     border-bottom: 2px solid black;
 }
 .hebergement section{
@@ -251,8 +255,9 @@ input::placeholder{
     margin-left: 2px;
     margin-top: 2px;
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
 }
-.blocartes article h4{
+.blocartes article h3{
     font-size: 1em;
     margin: 8px 0 4px 15px;
 }
@@ -302,7 +307,7 @@ aside div article{
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
     padding: 4px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     transition: transform .2s;
 }
 aside div article:hover {
@@ -315,24 +320,32 @@ aside div article:active{
 }
 aside div article img{
     width: 38%;
+    min-width: 38%;
     height: 140px;
     border-radius: 10px 0 0 10px;
+    object-fit: cover;
 }
 aside div article div{
+    all: initial;
+    font: inherit;
+    font-size: inherit;
     padding-left: 19px;
     height: 130px;
 }
-aside div article div h4{
+aside div article div h3{
     font-size: 1em;
-    margin-top: 10px;
-    margin-bottom: 0;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    overflow: hidden;
 } 
 aside div article div span{
     all: initial;
     font: inherit;
     font-size: 0.9em;
     font-weight: 400;
-    margin: 0px 0px 10px 0px;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .fa-chart-line{
     font-size: 1.6em;
@@ -342,7 +355,16 @@ aside div article div span{
     display: flex;
     justify-content: flex-start;
     font-size: 0.8em;
-    padding: 24px 0 2px 0;
+    padding: 52px 0 2px 0;
+}
+.etoiles_populairemilieu{
+    box-sizing: border-box;
+    position: absolute;
+    all: initial;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.8em;
+    padding: 52px 0 2px 0;
 }
 /*----------------------------------------Style Activités----------------------------------*/
 .activites{
@@ -395,14 +417,20 @@ aside div article div span{
 }
 .activites article img{
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+.grandecarte img{
+    height: 87%;
 }
 .doublecartepartie1 img{
-    height: 183px;    
+    height: 183px;
+    /* object-fit: cover;     */
 }
 .doublecartepartie2 img{
     height: 104px;
+    /* object-fit: cover; */
 }
-.activites article h4{
+.activites article h3{
     font-size: 1em;
     margin-left: 17px;
 }
@@ -415,12 +443,14 @@ aside div article div span{
 .doublecarte2partie1 img{
     height: 140px;
     width: 100%;
+    /* object-fit: cover; */
 }
 .doublecarte2partie2 img{
     height: 145px;
     width: 100%;
+    /* object-fit: cover; */
 }
-.doublecarte2partie1 h4, .doublecarte2partie2 h4{
+.doublecarte2partie1 h3, .doublecarte2partie2 h3{
     margin-top: 14px;
 }
 
