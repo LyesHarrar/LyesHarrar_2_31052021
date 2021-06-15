@@ -61,7 +61,7 @@ main{
     font-weight: 600;
 }
 form {
-    margin: 0.8em 0 1.5em 0;
+    margin: 0.8em 0 1em 0;
     display: flex;
     justify-content: flex-start;
 }
@@ -117,12 +117,12 @@ input::placeholder{
     width: 100%;
     align-items: center;
     flex-wrap: wrap;
-    height: 130px;
+    height: 115px;
 }
 .filtres span{
     font-weight: 800;
     font-size: 1.15em;
-    white-space: nowrap;
+    display: block;
 }
 .filtres div{
     border: 2px solid #F2F2F2;
@@ -375,7 +375,7 @@ aside div article div span{
     display: flex;
     justify-content: flex-start;
     font-size: 0.8em;
-    padding: 52px 0 2px 0;
+    padding: 33px 0 2px 0;
 }
 /*----------------------------------------Style Activités----------------------------------*/
 .activites{
@@ -440,11 +440,11 @@ aside div article div span{
 }
 .doublecartepartie1 img{
     height: 183px;
-    /* object-fit: cover;     */
+    object-fit: cover;    
 }
 .doublecartepartie2 img{
     height: 104px;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 .activites article h3{
     font-size: 1em;
@@ -459,12 +459,12 @@ aside div article div span{
 .doublecarte2partie1 img{
     height: 140px;
     width: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 .doublecarte2partie2 img{
     height: 145px;
     width: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 .doublecarte2partie1 h3, .doublecarte2partie2 h3{
     margin-top: 14px;
@@ -498,7 +498,7 @@ footer section p:hover{
 }
 
 /*----------------------fin du desktop----------------------------------------------*/
-@media all and (max-width: 1160px){
+ @media (min-width: 872px) and (max-width: 1160px){
         .hebergement{
             flex-direction: column-reverse;
             margin: 0;
@@ -511,6 +511,23 @@ footer section p:hover{
         }
         .hebergement aside{
             width: 100%;
+            height: 250px;
+        }
+        .hebergement aside div{
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0px 40px 0px 40px;
+        }
+        .hebergement aside div article{
+            width: 28.7%;
+            padding: 4px;
+            height: 150px;
+        }
+        .hebergement aside div article img{
+            height: 150px;
+        }
+        .hebergement aside div article div{
+            padding-left: 10px;
         }
         .hebergement section{
             width: auto;
@@ -526,7 +543,38 @@ footer section p:hover{
         }
 
 }
-@media all and (max-width: 660px){
+@media all and (max-width: 871px){
+    .hebergement{
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    main{
+        height: auto;
+    }
+    .activites{
+        height: 1060px;
+    }
+    .hebergement aside{
+        width: 100%;
+        /* height: 250px; */
+    }
+    .hebergement section{
+        width: auto;
+    }
+    .activites section{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 930px;
+    }
+    .premierblock, .deuxiemeblock{
+        width: 100%;
+        justify-content: space-between;
+    }
+    /* .filtres{
+        height: 260px;
+    } */
+}
+@media screen and (max-width: 610px) {
     .hebergement section{
         padding: 30px;
     }
@@ -545,9 +593,20 @@ footer section p:hover{
         width: auto;
     }
     .parametres{
-        height: 500px;
+        height: 550px;
     }
     .filtres{
-        height: 260px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .filtres div{
+        margin: 0;
+    }
+    .filtres span::after{
+        content: "\a";
+        white-space: pre;
     }
 }
