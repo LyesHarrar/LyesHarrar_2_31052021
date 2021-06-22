@@ -84,7 +84,7 @@ input{
     padding: 0 0 0 1em;
     margin: 0;
     width: 17%;
-    min-width: 180px;
+    min-width: 155px;
     border: 1px solid rgb(242,242,242);
     font-size: 1.1em;
     font-family: inherit;
@@ -612,6 +612,36 @@ footer section p:hover{
     }
     .filtres div{
         margin: 0;
+    }
+    .activites{
+        height: 1230px;
+    }
+    .activites section {
+        height: 1130px;
+        flex-direction: column;
+    }
+    .premierblock, .deuxiemeblock{
+        height: 554px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .grandecarte{
+        height: 170px;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .grandecarte img, .doublecartepartie1 img, .doublecartepartie2 img, .doublecarte2partie1 img, .doublecarte2partie2 img{
+        height: 74%;
+    }
+    .doublecarte{
+        height: 361px;
+        justify-content: space-between;
+    }
+    .doublecarte div{
+        height: 170px;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .activites section div article{
+        width: 100%;
     }
     footer{
         display: flex;
