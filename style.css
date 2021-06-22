@@ -337,6 +337,7 @@ aside div article div{
     padding-left: 20px;
     /* padding-right: 12px; */
     height: auto;
+    /* cursor: pointer; */
 }
 aside div article div h3:nth-child(1){
     font-size: 1em;
@@ -478,15 +479,16 @@ footer{
     max-width: 1440px;
     width: auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 30px 3.8% 0 3.8%;
 }
 footer section{
     padding: 1em 1em;
-    width: 32%;
+    width: 15%;
 }
-footer section h3{
+footer section h2{
     margin-bottom: 10px;
+    font-size: 1.2em;
 }
 footer section p{
     margin-top: 20px;
@@ -570,6 +572,12 @@ footer section p:hover{
         width: 100%;
         justify-content: space-between;
     }
+    .blocartes article img{
+        object-fit: fill;
+    }
+    /* br{
+        display: none;
+    } */
     /* .filtres{
         height: 260px;
     } */
@@ -605,8 +613,11 @@ footer section p:hover{
     .filtres div{
         margin: 0;
     }
-    .filtres span::after{
-        content: "\a";
-        white-space: pre;
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer section{
+        width: 100%;
     }
 }
