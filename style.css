@@ -6,7 +6,6 @@ body {
     margin: 0 auto;
     font-size: 0.95em;
   }
-  /* style du header */
 header {
     position: relative;
     display: flex;
@@ -42,7 +41,6 @@ nav a:visited{
 }
 main{
     height: 1640px;
-    /* height: auto; */
 }
 .parametres{
     position: relative;
@@ -66,14 +64,14 @@ form {
     justify-content: flex-start;
 }
 .map{
-    font-size: 1em;
-    width: 47px;
+    font-size: 1.1em;
+    width: 50px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #F2F2F2;
-    border-radius: 16px 0 0 16px;
+    border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
 }
 .map:hover{
@@ -91,10 +89,10 @@ input{
     font-weight: 500;
 }
 input::placeholder{
-    color: black;
+    color: #808080;
     font-weight: 600;
 }
-.boutonRechercher{
+button{
     color: white;
     background-color: #0065FC;
     cursor: pointer;
@@ -108,11 +106,13 @@ input::placeholder{
     border-radius: 0 16px 16px 0;
     border: none;
 }
-.boutonRechercher:hover{
+.fa-search{
+    display: none;
+}
+button:hover{
     font-size: 1em;
 }
 .filtres{
-    /* margin-bottom: 2em; */
     display: flex;
     width: 100%;
     align-items: center;
@@ -188,7 +188,7 @@ input::placeholder{
     display: flex;
     align-items: center;
     margin-bottom: 1em;
-    margin-top: 1em;
+    margin-top: 1.2em;
 }
 /*------------------------------------style hébérgement--------------------------------------------*/
 .hebergement{
@@ -312,7 +312,6 @@ aside div article{
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
     padding: 4px;
     display: flex;
-    /* justify-content: space-between; */
     transition: transform .2s;
 }
 aside div article:hover {
@@ -335,9 +334,7 @@ aside div article div{
     font: inherit;
     font-size: inherit;
     padding-left: 20px;
-    /* padding-right: 12px; */
     height: auto;
-    /* cursor: pointer; */
 }
 aside div article div h3:nth-child(1){
     font-size: 1em;
@@ -356,7 +353,6 @@ aside div article div span{
     font-size: 0.9em;
     font-weight: 400;
     margin: 0;
-    overflow: hidden;
     white-space: nowrap;
 }
 .fa-chart-line{
@@ -382,7 +378,7 @@ aside div article div span{
 .activites{
     height: 700px;
     width: auto;
-    margin: 45px 3.8% 0 3.8%;
+    margin: 45px 6.6% 0 6.6%;
     padding: 0;
 }
 .activites h2{
@@ -484,7 +480,7 @@ footer{
 }
 footer section{
     padding: 1em 1em;
-    width: 15%;
+    width: 30%;
 }
 footer section h2{
     margin-bottom: 10px;
@@ -500,6 +496,7 @@ footer section p:hover{
 }
 
 /*----------------------fin du desktop----------------------------------------------*/
+/*----------------------css responsive----------------------------------------------*/
  @media (min-width: 872px) and (max-width: 1160px){
         .hebergement{
             flex-direction: column-reverse;
@@ -543,7 +540,10 @@ footer section p:hover{
             width: 100%;
             justify-content: space-between;
         }
-
+        .filtres div:nth-child(5)
+        {
+            margin-left: 77px;
+        }
 }
 @media all and (max-width: 871px){
     .hebergement{
@@ -558,7 +558,6 @@ footer section p:hover{
     }
     .hebergement aside{
         width: 100%;
-        /* height: 250px; */
     }
     .hebergement section{
         width: auto;
@@ -576,14 +575,12 @@ footer section p:hover{
         object-fit: fill;
     }
     input{
-        width: 80%;
+        width: 70%;
     }
-    /* br{
-        display: none;
-    } */
-    /* .filtres{
-        height: 260px;
-    } */
+    .filtres div:nth-child(4)
+    {
+        margin-left: 77px;
+    }
 }
 @media screen and (max-width: 610px) {
     .hebergement section{
@@ -607,7 +604,7 @@ footer section p:hover{
         height: 550px;
     }
     .filtres{
-        height: 300px;
+        height: 270px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -615,33 +612,35 @@ footer section p:hover{
     }
     .filtres div{
         margin: 0;
+        font-size: 0.9em;
+    }
+    .filtres div span{
+        margin-left: 11px;
     }
     .activites{
-        height: 1230px;
+        height: 1360px;
     }
     .activites section {
-        height: 1130px;
+        height: 1275px;
         flex-direction: column;
     }
     .premierblock, .deuxiemeblock{
-        height: 554px;
+        height: 622px;
         flex-direction: column;
         justify-content: space-between;
     }
     .grandecarte{
-        height: 170px;
-        border-radius: 20px 20px 20px 20px;
+        height: 190px;
     }
     .grandecarte img, .doublecartepartie1 img, .doublecartepartie2 img, .doublecarte2partie1 img, .doublecarte2partie2 img{
         height: 74%;
     }
     .doublecarte{
-        height: 361px;
+        height: 405px;
         justify-content: space-between;
     }
     .doublecarte div{
-        height: 170px;
-        border-radius: 20px 20px 20px 20px;
+        height: 190px;
     }
     .activites section div article{
         width: 100%;
@@ -652,5 +651,35 @@ footer section p:hover{
     }
     footer section{
         width: 80%;
+    }
+    .filtres div:nth-child(4)
+    {
+        margin-left: 0px;
+    }
+    button span{
+        display: none;
+    }
+    .fa-search{
+        display: inline;
+    }
+    .map{
+        height: 50px;
+    }
+    button{
+        width: 55px;
+        border: none;
+        height: 50px;
+        border-radius: 16px 16px 16px 16px;
+    }
+    input{
+        height: 50px;
+        border: none;
+    }
+    form{
+        border: 2px solid #F2F2F2;
+        border-radius: 16px 16px 16px 16px;
+        border-right: none;
+        border-left: none;
+        height: 50px;
     }
 }
