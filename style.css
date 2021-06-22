@@ -30,7 +30,7 @@ nav a:hover{
     color: #0065FC;
 }
 nav a:visited{
-    color: none;
+    color: normal;
 }
 .lien_inscrire{
     color: #0065FC;
@@ -290,7 +290,9 @@ aside{
     flex-direction: column;
     width: 30.1%;
 }
-aside span{
+.populaire{
+    all: initial;
+    font-family: inherit;
     display: inline-block;
     display: flex;
     justify-content: space-between;
@@ -302,17 +304,6 @@ aside div{
     flex-direction: column;
     justify-content: space-between;
     padding: 4px 30px 5px 30px;
-}
-aside div article{
-    border: 1px solid white;
-    background-color: white;
-    height: 140px;
-    border-radius: 15px;
-    cursor: pointer;
-    box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
-    padding: 4px;
-    display: flex;
-    transition: transform .2s;
 }
 aside div article:hover {
     -ms-transform: scale(1.019); /* IE 9 */
@@ -330,11 +321,22 @@ aside div article img{
     object-fit: cover;
 }
 aside div article div{
-    all: initial;
+    all: unset;
     font: inherit;
     font-size: inherit;
     padding-left: 20px;
     height: auto;
+}
+aside div article{
+    border: 1px solid white;
+    background-color: white;
+    height: 140px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
+    padding: 4px;
+    display: flex;
+    transition: transform .2s;
 }
 aside div article div h3:nth-child(1){
     font-size: 1em;
@@ -346,20 +348,22 @@ aside div article div h3:nth-child(2){
     font-size: 1em;
     margin-top: 4px;
     margin-bottom: 10px;
+    /* white-space: nowrap; */
 } 
 aside div article div span{
-    all: initial;
+    all: unset;
     font: inherit;
     font-size: 0.9em;
     font-weight: 400;
     margin: 0;
+    overflow: hidden;
     white-space: nowrap;
 }
 .fa-chart-line{
     font-size: 1.6em;
 }
 .etoiles_populaire{
-    all: initial;
+    all: unset;
     display: flex;
     justify-content: flex-start;
     font-size: 0.8em;
@@ -368,7 +372,7 @@ aside div article div span{
 .etoiles_populairemilieu{
     box-sizing: border-box;
     position: absolute;
-    all: initial;
+    all: unset;
     display: flex;
     justify-content: flex-start;
     font-size: 0.8em;
@@ -378,14 +382,14 @@ aside div article div span{
 .activites{
     height: 700px;
     width: auto;
-    margin: 45px 6.6% 0 6.6%;
+    margin: 45px 3.8% 0 3.8%;
     padding: 0;
 }
 .activites h2{
     font-size: 1.3em;
     margin: 70px 0 30px 0;
 }
-.activites section{
+.blocactivites{
     display: flex;
     justify-content: space-between;
 }
@@ -517,8 +521,16 @@ footer section p:hover{
             justify-content: space-between;
             padding: 0px 40px 0px 40px;
         }
+        .hebergement aside .populaire{
+            all: unset;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin: 40px 40px 0 40px;
+
+        }
         .hebergement aside div article{
-            width: 28.7%;
+            width: 29.65%;
             padding: 4px;
             height: 150px;
         }
@@ -527,11 +539,12 @@ footer section p:hover{
         }
         .hebergement aside div article div{
             padding-left: 10px;
+            padding-right: 0;
         }
         .hebergement section{
             width: auto;
         }
-        .activites section{
+        .blocactivites{
             flex-direction: column;
             justify-content: space-between;
             height: 930px;
@@ -562,7 +575,7 @@ footer section p:hover{
     .hebergement section{
         width: auto;
     }
-    .activites section{
+    .blocactivites{
         flex-direction: column;
         justify-content: space-between;
         height: 930px;
@@ -619,8 +632,9 @@ footer section p:hover{
     }
     .activites{
         height: 1360px;
+        margin: 45px 30px 0 30px;
     }
-    .activites section {
+    .blocactivites{
         height: 1275px;
         flex-direction: column;
     }
@@ -642,7 +656,7 @@ footer section p:hover{
     .doublecarte div{
         height: 190px;
     }
-    .activites section div article{
+    .blocactivites div article{
         width: 100%;
     }
     footer{
