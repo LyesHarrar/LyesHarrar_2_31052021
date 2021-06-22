@@ -575,6 +575,9 @@ footer section p:hover{
     .blocartes article img{
         object-fit: fill;
     }
+    input{
+        width: 80%;
+    }
     /* br{
         display: none;
     } */
