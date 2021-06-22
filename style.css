@@ -618,6 +618,6 @@ footer section p:hover{
         flex-direction: column;
     }
     footer section{
-        width: 100%;
+        width: 80%;
     }
 }
