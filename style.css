@@ -709,7 +709,7 @@ footer section p:hover{
     header nav a {
         padding: 0 0 20px 0;
         width: 50%;
-        border-bottom: 1px solid silver;
+        border-bottom: 3px solid #F2F2F2;
         text-align: center;
     }
 
