@@ -494,6 +494,7 @@ footer section p{
     margin-top: 20px;
     cursor: pointer;
     width: fit-content;
+    width: -moz-fit-content; 
 }
 footer section p:hover{
     border-bottom: 1px solid black;
