@@ -36,5 +36,5 @@ Au sein du Projet n°2 du parcours [développeur web chez OpenClassrooms](https:
 - Le projet à été réalisé en HTML5/CSS3, sans framework 
 
 ## Contact
-- [Adresse e-mail](lyesharrar@gmail.com)
+-  Adresse e-mail :lyesharrar@gmail.com
 - [Workplace](https://openclassrooms.workplace.com/profile.php?id=100066988681465)
